@@ -1,0 +1,32 @@
+<view class="container">
+    <!-- 主窗口 -->
+    <view class="main" animation="{{mainPageAnimation}}">
+        <!-- 自定义导航栏 -->
+        <navigation>
+            <view class="current=date">
+                <image src="../static/menu.png" style="height: {{menuHeight + 30}}rpx; width:  {{menuHeight + 30}}rpx;" data-status="open" bindtap="openDrawer" wx:if="{{!isShow}}"></image>
+                <image src="../static/close.png" style="height: {{menuHeight + 30}}rpx; width:  {{menuHeight + 30}}rpx;" data-status="close" bindtap="closeDrawer" wx:else></image>
+            </view>
+        </navigation>
+
+        <view class="info">
+            <image src="../static/avatar.jpg" class="infoAvatar"></image>
+            <view class="infoName">Powered By Licodeao</view>
+        </view>
+    </view>
+
+    <!-- 抽屉菜单 -->
+    <view class="drawerPage" animation="{{drawerPageAnimation}}">
+        <view class="profileBox" style="margin-top: {{menuHeight + 30}}rpx;">
+            <image class="avatar" src="../static/avatar.jpg"></image>
+            <view class="name">Licodeao</view>
+        </view>
+        <view class="menu">
+            <view class="pill" wx:for="{{sliderList}}" wx:key="index" bindtap="addPill">
+                <image class="icon" src="../static/avatar.jpg"></image>
+                <view class="font">{{item.text}}</view>
+            </view>
+        </view>
+        <view class="bottom">Powered By Licodeao</view>
+    </view>
+</view>

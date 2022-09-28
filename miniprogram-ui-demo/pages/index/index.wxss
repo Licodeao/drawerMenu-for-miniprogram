@@ -1,0 +1,123 @@
+.container {
+    width: 100%;
+    position: fixed;
+    /* overflow: hidden; */
+    transform: perspective(1500);
+}
+
+/* 主窗口 */
+.main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    width: 90%;
+    height: 220px;
+    margin: 50% auto;
+    text-align: center;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.info .infoAvatar {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+/* 抽屉菜单 */
+.drawerPage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#171825;
+}
+
+.drawerPage .profileBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.drawerPage .profileBox .avatar{
+    width: 60px;
+    height: 60px;
+    line-height: 80px;
+    border-radius: 50%;
+}
+
+.menu {
+    margin-top: 50px;
+}
+
+.menu:nth-of-type(view) {
+    float: left;
+}
+
+.menu .pill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 120px;
+    height: 50px;
+    line-height: 40px;
+    margin: 10px;
+    border-radius: 25px;
+    color: #FFFFFF;
+}
+
+.menu .pill .icon {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;   
+}
+
+.menu .pill .font {
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.bottom {
+    color: #FFFFFF;
+}
+
+@keyframes pillBounce {
+    0% {
+        transition: scaleX(0);
+    }
+
+    50% {
+        transition: scaleX(1.1);
+    }
+
+    100% {
+        transition: scaleX(1.5);
+    }
+}
+
+.addPillBackground {
+    background-color: #8347E8;
+    animation: pillBounce 2s;
+}
+
+.drawer {
+    transform: rotate3d(180deg) scale(1) translate(60%, 0%)
+}
