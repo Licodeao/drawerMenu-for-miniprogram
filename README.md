@@ -31,4 +31,4 @@
 噢对，说下踩坑点：
 
 * 微信小程序的this.animate() API，开发工具测试一切正常，预览与真机测试并没有效果
-* 因此，必须得用传统的wx.createAnimation()来创建dong'hua
+* 因此，必须得用传统的wx.createAnimation()来创建动画
