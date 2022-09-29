@@ -16,13 +16,13 @@
     </view>
 
     <!-- 抽屉菜单 -->
-    <view class="drawerPage" animation="{{drawerPageAnimation}}">
+    <view class="drawerPage" animation="{{drawerPageAnimation}}" bindtap="resume">
         <view class="profileBox" style="margin-top: {{menuHeight + 30}}rpx;">
             <image class="avatar" src="../static/avatar.jpg"></image>
             <view class="name">Licodeao</view>
         </view>
         <view class="menu">
-            <view class="pill" wx:for="{{sliderList}}" wx:key="index" bindtap="addPill">
+            <view class="pill" wx:for="{{sliderList}}" wx:key="index">
                 <image class="icon" src="../static/avatar.jpg"></image>
                 <view class="font">{{item.text}}</view>
             </view>

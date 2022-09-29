@@ -98,26 +98,3 @@
 .bottom {
     color: #FFFFFF;
 }
-
-@keyframes pillBounce {
-    0% {
-        transition: scaleX(0);
-    }
-
-    50% {
-        transition: scaleX(1.1);
-    }
-
-    100% {
-        transition: scaleX(1.5);
-    }
-}
-
-.addPillBackground {
-    background-color: #8347E8;
-    animation: pillBounce 2s;
-}
-
-.drawer {
-    transform: rotate3d(180deg) scale(1) translate(60%, 0%)
-}

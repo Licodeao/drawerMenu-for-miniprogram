@@ -44,11 +44,7 @@ Page({
             text: "Help"
         }
     ],
-    currentIndex: 0,
     isShow: false
-  },
-  addPill(e) {
-      console.log(e)
   },
   openDrawer(e) {
       let currentStatus = e.currentTarget.dataset.status
@@ -65,6 +61,12 @@ Page({
         })
         this.createAnimation(currentStatus)
     }
+  },
+  resume() {
+    this.clearAnimation('.main')
+    this.setData({
+        isShow: false
+    })
   },
   createAnimation(currentStatus) {
     console.log(currentStatus)
