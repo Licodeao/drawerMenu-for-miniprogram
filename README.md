@@ -18,11 +18,11 @@
 
 * 预览
 
-  ![5todl-s3m3q](https://typora-licodeao.oss-cn-guangzhou.aliyuncs.com/typoraImg/5todl-s3m3q.gif)
+  ![](../drawer-menu/5todl-s3m3q.gif)
 
 * 真机测试
 
-  ![90o06-nlned](https://typora-licodeao.oss-cn-guangzhou.aliyuncs.com/typoraImg/90o06-nlned.gif)
+  ![](../drawer-menu/90o06-nlned.gif)
 
 ## 总结
 
