@@ -19,11 +19,11 @@
 
 * 预览
 
-  ![](../drawer-menu/5todl-s3m3q.gif)
+  ![image](https://github.com/Licodeao/drawerMenu-for-miniprogram/blob/master/preview.gif)
 
 * 真机测试
 
-  ![](../drawer-menu/90o06-nlned.gif)
+  ![image](https://github.com/Licodeao/drawerMenu-for-miniprogram/blob/master/realphone.gif)
 
 ## 总结
 
