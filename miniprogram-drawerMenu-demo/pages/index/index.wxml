@@ -2,12 +2,12 @@
     <!-- 主窗口 -->
     <view class="main" animation="{{mainPageAnimation}}">
         <!-- 自定义导航栏 -->
-        <navigation>
+        <custom-navbar>
             <view class="current=date">
                 <image src="../static/menu.png" style="height: {{menuHeight + 30}}rpx; width:  {{menuHeight + 30}}rpx;" data-status="open" bindtap="openDrawer" wx:if="{{!isShow}}"></image>
                 <image src="../static/close.png" style="height: {{menuHeight + 30}}rpx; width:  {{menuHeight + 30}}rpx;" data-status="close" bindtap="closeDrawer" wx:else></image>
             </view>
-        </navigation>
+        </custom-navbar>
 
         <view class="info">
             <image src="../static/avatar.jpg" class="infoAvatar"></image>
@@ -16,13 +16,13 @@
     </view>
 
     <!-- 抽屉菜单 -->
-    <view class="drawerPage" animation="{{drawerPageAnimation}}" bindtap="resume">
-        <view class="profileBox" style="margin-top: {{menuHeight + 30}}rpx;">
+    <view class="drawerPage">
+        <view class="profileBox" style="margin-top: {{menuHeight + 30}}rpx;" bindtap="resume">
             <image class="avatar" src="../static/avatar.jpg"></image>
             <view class="name">Licodeao</view>
         </view>
         <view class="menu">
-            <view class="pill" wx:for="{{sliderList}}" wx:key="index">
+            <view class="pill {{index == currentIndex ? 'pillBackground' : ''}}" wx:for="{{sliderList}}" wx:key="index" bindtap="click" mark:index="{{index}}">
                 <image class="icon" src="../static/avatar.jpg"></image>
                 <view class="font">{{item.text}}</view>
             </view>

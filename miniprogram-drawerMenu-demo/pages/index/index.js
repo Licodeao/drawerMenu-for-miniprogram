@@ -44,7 +44,8 @@ Page({
             text: "Help"
         }
     ],
-    isShow: false
+    isShow: false,
+    currentIndex: 0
   },
   openDrawer(e) {
       let currentStatus = e.currentTarget.dataset.status
@@ -77,5 +78,11 @@ Page({
     if (currentStatus === "close") {
         this.clearAnimation('.main')
     }
+  },
+  click(event) {
+    console.log(event)
+    this.setData({
+        currentIndex: event.mark.index
+    })
   }
 })

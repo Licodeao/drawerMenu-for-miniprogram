@@ -1,7 +1,6 @@
 .container {
     width: 100%;
     position: fixed;
-    /* overflow: hidden; */
     transform: perspective(1500);
 }
 
@@ -83,8 +82,8 @@
 }
 
 .menu .pill .icon {
-    width: 45px;
-    height: 45px;
+    width: 49px;
+    height: 49px;
     line-height: 45px;
     border-radius: 50%;   
 }
@@ -97,4 +96,9 @@
 
 .bottom {
     color: #FFFFFF;
+}
+
+.pillBackground {
+    background-color: #8346E8;
+    transform: translateX(30px);
 }

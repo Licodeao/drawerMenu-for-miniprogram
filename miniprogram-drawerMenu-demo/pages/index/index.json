@@ -1,6 +1,6 @@
 {
   "navigationStyle": "custom",
   "usingComponents": {
-      "navigation": "/pages/components/navigation"
+      "custom-navbar": "/pages/components/CustomNavBar/customNavBar"
   }
 }
